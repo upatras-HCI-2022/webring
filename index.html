@@ -6,31 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/style/index.css">
     <link rel="stylesheet" type="text/css" href="/style/index-override.css">
   </head>
-  <body>
-    <center>
-      <h2>Welcome to the {{ site.name }} webring!</h2>
-      <p>This webring consists of the 6 students who study this year (2022 -2023) at the Master program: Human-Computer Interaction at the Univert=sity of Patras.</br>More information about the team by choosing a random site or selecting one from the drop down list below!</p>
- 
-      <script>
-        //specify random links below. You can have as many as you want
-        var randomlinks=new Array()
 
-        randomlinks[0]="https://vasilisk23.github.io/jekyll-cv/"
-        randomlinks[1]="https://akimo13.github.io/"
-        randomlinks[2]="https://evangeliachatz.github.io/online-cv/"
-        randomlinks[3]="https://e-liouta.github.io/"
-        randomlinks[4]="https://kwnnath.github.io/jekyll-cv/"
-        randomlinks[5]="https://mairyss.github.io/"
-
-        function randomlink(){
-          window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
-        }
-        //-->
-      </script>
-      <form method="post">
-      <p><input type="button" name="B1" value="Choose a random site >>" onclick="randomlink()"></p> </form>
-    
-      <p><style> 
+<style> 
        /* Dropdown Button */ 
         .dropdown-button { 
          background-color: #0000b3; 
@@ -72,8 +49,41 @@
         .dropdown:hover .dropdown-button { 
          background-color: #6666ff; 
         } 
-      </style></p> 
- 
+      </style>
+
+  <body>
+    <center>
+      <img id="logo" src="/indexLogo.png"/>
+      <p>Welcome to the {{ site.name }} webring!</p>
+      {% assign sorted = site.sites | sort: 'id'%}
+      <a id="startRingLink" href="{{ sorted.first.url }}"><button id="startRingButton">
+       Jump to the first site!
+      </button></a>
+      <br><br>
+      <a id="endRingLink" href="{{ sorted.last.url }}"><button id="endRingButton">
+       Jump to the last site!
+      </button></a>
+
+      <script>
+        //specify random links below. You can have as many as you want
+        var randomlinks=new Array()
+
+        randomlinks[0]="https://vasilisk23.github.io/jekyll-cv/"
+        randomlinks[1]="https://akimo13.github.io/"
+        randomlinks[2]="https://evangeliachatz.github.io/online-cv/"
+        randomlinks[3]="https://e-liouta.github.io/"
+        randomlinks[4]="https://kwnnath.github.io/jekyll-cv/"
+        randomlinks[5]="https://mairyss.github.io/"
+
+        function randomlink(){
+          window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+        }
+        //-->
+      </script>
+      <form method="post">
+      <p><input type="button" name="B1" value="Choose a random site >>" onclick="randomlink()"></p> </form>
+    
+       
       <div class="dropdown"> 
         <button class="dropdown-button">Choose a Site</button> 
         <div class="dropdown-list"> 
