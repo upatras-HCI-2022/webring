@@ -9,16 +9,9 @@
   <body>
     <center>
       <img id="logo" src="/indexLogo.png"/>
-      <p>Welcome to the {{ site.name }} webring!</p>
-      {% assign sorted = site.sites | sort: 'id'%}
-      <a id="startRingLink" href="{{ sorted.first.url }}"><button id="startRingButton">
-       Jump to the first site!
-      </button></a>
-      <br><br>
-      <a id="endRingLink" href="{{ sorted.last.url }}"><button id="endRingButton">
-       Jump to the last site!
-      </button></a>
-
+      <h1>Welcome to the {{ site.name }} webring!</h1>
+      <p>This webring consists of the 6 students who study this year (2022 -2023) at the Master program: Human-Computer Interaction at the Univert=sity of Patras.</br>More information about the team by choosing a random site or selecting one from the drop down list below!</p>
+ 
       <script>
         //specify random links below. You can have as many as you want
         var randomlinks=new Array()
@@ -39,17 +32,6 @@
       <p><input type="button" name="B1" value="Choose a random site >>" onclick="randomlink()"></p> </form>
     
       <p><style> 
-
-        .button {
-          background-color: #4CAF50; /* Green */
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-        }
        /* Dropdown Button */ 
         .dropdown-button { 
          background-color: #0000b3; 
