@@ -3,7 +3,7 @@ collections:
   sites:
     output: true
     sort_by: name
-name: "Example Ring"
+name: "HCI Webring 2022"
 description: Please edit _config.yml.
 
 kramdown:
