@@ -18,19 +18,38 @@
       <a id="endRingLink" href="{{ sorted.last.url }}"><button id="endRingButton">
        Jump to the last site!
       </button></a>
+
+      <script>
+        //specify random links below. You can have as many as you want
+        var randomlinks=new Array()
+
+        randomlinks[0]="https://vasilisk23.github.io/jekyll-cv/"
+        randomlinks[1]="https://akimo13.github.io/"
+        randomlinks[2]="https://evangeliachatz.github.io/online-cv/"
+        randomlinks[3]="https://e-liouta.github.io/"
+        randomlinks[4]="https://kwnnath.github.io/jekyll-cv/"
+        randomlinks[5]="https://mairyss.github.io/"
+
+        function randomlink(){
+          window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+        }
+        //-->
+      </script>
+      <form method="post">
+      <p><input type="button" name="B1" value="Choose a random site >>" onclick="randomlink()"></p> </form>
     
       <p><style> 
        /* Dropdown Button */ 
         .dropdown-button { 
          background-color: #0000b3; 
          color: white; 
-          padding: 16px; 
-          font-size: 16px; 
+         padding: 16px; 
+         font-size: 16px; 
         border: none; 
         } 
         .dropdown { 
          position: relative; 
-        display: inline-block; 
+         display: inline-block; 
         } 
         /* Dropdown Content (Hidden by Default) */ 
         .dropdown-list { 
@@ -38,7 +57,7 @@
          position: absolute; 
          background-color: #f1f1f1; 
          min-width: 160px; 
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
          z-index: 1; 
         } 
         /* Links inside the dropdown */ 
@@ -46,8 +65,8 @@
          color: black; 
          padding: 12px 16px; 
          text-decoration: none; 
-          display: block; 
-          font-family: verdana; 
+         display: block; 
+         font-family: verdana; 
         } 
         /* Change color of dropdown links on hover */ 
         .dropdown-list a:hover { 
@@ -61,7 +80,7 @@
         .dropdown:hover .dropdown-button { 
          background-color: #6666ff; 
         } 
-        </style></p> 
+      </style></p> 
  
       <div class="dropdown"> 
         <button class="dropdown-button">Choose a Site</button> 
