@@ -10,14 +10,7 @@
     <center>
       <img id="logo" src="/indexLogo.png"/>
       <p>Welcome to the {{ site.name }} webring!</p>
-      {% assign sorted = site.sites | sort: 'id'%}
-      <a id="startRingLink" href="{{ sorted.first.url }}"><button id="startRingButton">
-       Jump to the first site!
-      </button></a>
-      <br><br>
-      <a id="endRingLink" href="{{ sorted.last.url }}"><button id="endRingButton">
-       Jump to the last site!
-      </button></a>
+      <p>This webring consists of 6 students of the patras university. You can see more br choosing a random site of selecting one from the dropdown list! </p>
 
       <script>
         //specify random links below. You can have as many as you want
