@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="/style/index-override.css">
 	</head>
 	<body>
-		<img id="logo" src="/img/indexLogo.png"/>
+		<img id="logo" src="/indexLogo.png"/>
 		<p>Welcome to the {{ site.name }} webring!</p>
 		{% assign sorted = site.sites | sort: 'id'%}
 		<a id="startRingLink" href="{{ sorted.first.url }}"><button id="startRingButton">
