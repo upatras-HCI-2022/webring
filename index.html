@@ -3,53 +3,66 @@
 <html>
   <head>
     <title>{{ site.name }}</title>
-    <link rel="stylesheet" type="text/css" href="/style/index.css">
-    <link rel="stylesheet" type="text/css" href="/style/index-override.css">
+    
   </head>
 
 <style> 
-       /* Dropdown Button */ 
-        .dropdown-button { 
-         background-color: #0000b3; 
-         color: white; 
-         padding: 16px; 
-         font-size: 16px; 
-        border: none; 
-        } 
-        .dropdown { 
-         position: relative; 
-         display: inline-block; 
-        } 
-        /* Dropdown Content (Hidden by Default) */ 
-        .dropdown-list { 
-         display: none; 
-         position: absolute; 
-         background-color: #f1f1f1; 
-         min-width: 160px; 
-         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-         z-index: 1; 
-        } 
-        /* Links inside the dropdown */ 
-        .dropdown-list a { 
-         color: black; 
-         padding: 12px 16px; 
-         text-decoration: none; 
-         display: block; 
-         font-family: verdana; 
-        } 
-        /* Change color of dropdown links on hover */ 
-        .dropdown-list a:hover { 
-         background-color: #ddd; 
-        } 
-        /* Show the dropdown list on hover */ 
-        .dropdown:hover .dropdown-list { 
-         display: block; 
-        } 
-        /* Change the background color of the dropdown button when the dropdown list is shown */ 
-        .dropdown:hover .dropdown-button { 
-         background-color: #6666ff; 
-        } 
-      </style>
+  /**/
+  .h2{
+    font-size: 25px;
+    font-family: verdana; 
+  }
+
+  .button{
+    background-color: #0000b3; 
+    color: white; 
+    padding: 16px; 
+    font-size: 16px; 
+    border: none; 
+  }
+
+  /* Dropdown Button */ 
+  .dropdown-button { 
+    background-color: #0000b3; 
+    color: white; 
+    padding: 16px; 
+    font-size: 16px; 
+    border: none; 
+  } 
+  .dropdown { 
+    position: relative; 
+    display: inline-block; 
+  } 
+  /* Dropdown Content (Hidden by Default) */ 
+  .dropdown-list { 
+    display: none; 
+    position: absolute; 
+    background-color: #f1f1f1; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+  } 
+  /* Links inside the dropdown */ 
+  .dropdown-list a { 
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    font-family: verdana; 
+  } 
+  /* Change color of dropdown links on hover */ 
+  .dropdown-list a:hover { 
+    background-color: #ddd; 
+  } 
+  /* Show the dropdown list on hover */ 
+  .dropdown:hover .dropdown-list { 
+    display: block; 
+  } 
+  /* Change the background color of the dropdown button when the dropdown list is shown */ 
+  .dropdown:hover .dropdown-button { 
+    background-color: #6666ff; 
+  } 
+  </style>
 
   <body>
     <center>
@@ -57,7 +70,6 @@
       <h2>Welcome to the {{ site.name }} webring!</h2>
       <p>This webring consists of the 6 students who study this year (2022 -2023) at the Master program: Human-Computer Interaction at the Univert=sity of Patras.</br>More information about the team by choosing a random site or selecting one from the drop down list below!</p>
 
-      
       <script>
         //specify random links below. You can have as many as you want
         var randomlinks=new Array()
