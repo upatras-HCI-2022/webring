@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="/style/index-override.css">
 	</head>
 	<body>
+		<center>
 		<img id="logo" src="/indexLogo.png"/>
 		<p>Welcome to the {{ site.name }} webring!</p>
 		{% assign sorted = site.sites | sort: 'id'%}
@@ -28,5 +29,6 @@
 
 		<!-- if you'd like to say "thanks" to myring, keep this here! -->
 		<p id="myringCredit">Made with <a href="https://github.com/kokoscript/myring" target="_blank" rel="noopener noreferrer">myring</a></p>
+		</center>
 	</body>
 </html>
