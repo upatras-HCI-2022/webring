@@ -5,6 +5,7 @@ collections:
     sort_by: name
 name: "HCI Webring 2022"
 description: Please edit _config.yml.
+favicon: FAVICON.png
 
 kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]
