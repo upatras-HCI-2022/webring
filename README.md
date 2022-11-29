@@ -6,4 +6,5 @@ All members have the right to vote. We vote on which combination of members we w
 
 ## Admins 
 <b>27.10 - 03.11</b> Effie Liouta & Konstantina Athanasopoulou </br>
-<b>04.11 - 10.11</b> Dimitris Karatsoulas & Mary Samanta : [εκλογές](https://github.com/orgs/upatras-HCI-2022/discussions/10)
+<b>04.11 - 29.11</b> Dimitris Karatsoulas & Mary Samanta : [εκλογές](https://github.com/orgs/upatras-HCI-2022/discussions/10)
+<b>30.11 - Current</b> Effie Liouta & Evangelia Chatzilygeroudi</br>
